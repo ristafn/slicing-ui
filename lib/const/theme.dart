@@ -1,0 +1,2 @@
+const primaryColor = '';
+const secondaryColor = '';
