@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class SlicingUIPage extends StatelessWidget {
+  const SlicingUIPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text('Slicing UI'),
+      ),
       body: Column(
         children: [
           Image.asset(
-            'images/lake.jpg',
+            'assets/images/lake.jpg',
             width: 600,
             height: 240,
             fit: BoxFit.cover,
