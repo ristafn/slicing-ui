@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_application_1/features/dialog_widget/widgets/cupertino_dialog_widget.dart';
+import 'package:flutter_application_1/features/dialog_widget/widgets/material_dialog_widget.dart';
 
 class DialogWidgetPage extends StatelessWidget {
   const DialogWidgetPage({super.key});
@@ -11,8 +11,15 @@ class DialogWidgetPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Dialog Widget'),
       ),
-      body: const Center(
-        child: Text('Dialog widget'),
+      body: Container(
+        alignment: Alignment.center,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: const [
+            MaterialDialogWidget(),
+            CupertinoDialogWidget(),
+          ],
+        ),
       ),
     );
   }
