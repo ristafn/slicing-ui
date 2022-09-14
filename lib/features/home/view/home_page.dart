@@ -17,6 +17,7 @@ class HomePage extends StatelessWidget {
       parseRoute,
       cupertinoRoute,
       dialogRoute,
+      formRoute,
     ];
 
     return Scaffold(

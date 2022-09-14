@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_application_1/features/form/views/form_page.dart';
 
 import 'const/routes.dart';
 import 'features/cupertino_widget/views/cupertino_widget_page.dart';
@@ -17,6 +18,7 @@ class Routes {
       parseRoute: (context) => const ParsePage(),
       cupertinoRoute: (context) => const CupertinoWidgetPage(),
       dialogRoute: (context) => const DialogWidgetPage(),
+      formRoute: (context) => const FormPage(),
     };
   }
 }
