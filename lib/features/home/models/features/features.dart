@@ -1,3 +1,4 @@
+import 'package:flutter_application_1/features/home/models/feature/feature.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'features.g.dart';
@@ -10,7 +11,8 @@ class Features {
   });
 
   final String status;
-  final String data;
+  final List<Feature> data;
 
-  factory Features.fromJson(Map<String, dynamic> json) => _$FeaturesFromJson(json);
+  factory Features.fromJson(Map<String, dynamic> json) =>
+      _$FeaturesFromJson(json);
 }

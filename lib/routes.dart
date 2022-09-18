@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/features/form/views/form_page.dart';
-import 'package:flutter_application_1/features/modal_bottom_sheet/views/modal_bottom_page.dart';
 
+import 'features/counter_bloc/views/counter_page.dart';
 import 'features/cupertino_widget/views/cupertino_widget_page.dart';
 import 'features/dialog_widget/views/dialog_widget_page.dart';
+import 'features/form/views/form_page.dart';
 import 'features/home/view/home_page.dart';
 import 'features/incremental_number/views/increment_page.dart';
 import 'features/list_builder/views/list_builder_page.dart';
 import 'features/list_separator/views/list_separator_page.dart';
+import 'features/modal_bottom_sheet/views/modal_bottom_page.dart';
 import 'features/page_view/views/page_view_page.dart';
 import 'features/simple_parse/views/parse_page.dart';
 import 'features/slicing_ui/views/slicingui_page.dart';
@@ -20,12 +21,13 @@ class Routes {
   static const parseRoute = '/parse';
   static const cupertinoRoute = '/cupertino';
   static const dialogRoute = '/dialog';
-  static const formRoute = '/form';
-  static const downRoute = '/down';
   static const statefulRoute = '/stateful';
+  static const formRoute = '/form';
+  static const downRoute = '/bottom';
   static const listBuilderRoute = '/list_builder';
   static const listSeparatorRoute = '/list_separator';
   static const pageViewRoute = '/page_view';
+  static const counterBlocRoute = '/counter_bloc';
 
   static const List<String> pages = [
     incrementRoute,
@@ -33,12 +35,13 @@ class Routes {
     parseRoute,
     cupertinoRoute,
     dialogRoute,
+    statefulRoute,
     formRoute,
     downRoute,
-    statefulRoute,
     listBuilderRoute,
     listSeparatorRoute,
     pageViewRoute,
+    counterBlocRoute,
   ];
 
   static Map<String, Widget Function(BuildContext)> route() {
@@ -55,6 +58,7 @@ class Routes {
       listBuilderRoute: (context) => const ListBuilderPage(),
       listSeparatorRoute: (context) => const ListSeparatorPage(),
       pageViewRoute: (context) => const PageViewPage(),
+      counterBlocRoute: (context) => const CounterPage(),
     };
   }
 }

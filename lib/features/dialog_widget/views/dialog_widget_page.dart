@@ -17,6 +17,9 @@ class DialogWidgetPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
             MaterialDialogWidget(),
+            SizedBox(
+              height: 20.0,
+            ),
             CupertinoDialogWidget(),
           ],
         ),

@@ -8,7 +8,9 @@ part of 'features.dart';
 
 Features _$FeaturesFromJson(Map<String, dynamic> json) => Features(
       status: json['status'] as String,
-      data: json['data'] as String,
+      data: (json['data'] as List<dynamic>)
+          .map((e) => Feature.fromJson(e as Map<String, dynamic>))
+          .toList(),
     );
 
 Map<String, dynamic> _$FeaturesToJson(Features instance) => <String, dynamic>{

@@ -18,6 +18,9 @@ class ModalBottomPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
             MaterialModalWidget(),
+            SizedBox(
+              height: 20.0,
+            ),
             CupertinoModalWidget(),
           ],
         ),
