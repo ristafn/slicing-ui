@@ -16,7 +16,7 @@ class ListViewWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemCount: pages.length,
+      itemCount: snapshot.data!.length,
       itemBuilder: (context, index) {
         final data = snapshot.data![index];
         final page = pages[index];

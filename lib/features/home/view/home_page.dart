@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/routes.dart';
 
-import '../../../const/routes.dart';
 import '../implementation/home_impl.dart';
 import '../models/feature/feature.dart';
 import '../widgets/listview_widget.dart';
@@ -11,13 +11,6 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final HomeImplement impl = HomeImplement();
-    final List<String> pages = [
-      incrementRoute,
-      slicingRoute,
-      parseRoute,
-      cupertinoRoute,
-      dialogRoute,
-    ];
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -28,7 +21,7 @@ class HomePage extends StatelessWidget {
         future: impl.fetchFeature(),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            return ListViewWidget(snapshot: snapshot, pages: pages);
+            return ListViewWidget(snapshot: snapshot, pages: Routes.pages);
           }
 
           return const Center(

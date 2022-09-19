@@ -1,26 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/features/dialog_widget/widgets/cupertino_dialog_widget.dart';
-import 'package:flutter_application_1/features/dialog_widget/widgets/material_dialog_widget.dart';
 
-class DialogWidgetPage extends StatelessWidget {
-  const DialogWidgetPage({super.key});
+import '../widgets/cupertino_modal_widget.dart';
+import '../widgets/material_modal_widget.dart';
+
+class ModalBottomPage extends StatelessWidget {
+  const ModalBottomPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Dialog Widget'),
+        title: const Text('Modal BottomSheet'),
       ),
       body: Container(
         alignment: Alignment.center,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
-            MaterialDialogWidget(),
+            MaterialModalWidget(),
             SizedBox(
               height: 20.0,
             ),
-            CupertinoDialogWidget(),
+            CupertinoModalWidget(),
           ],
         ),
       ),
