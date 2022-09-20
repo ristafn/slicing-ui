@@ -37,7 +37,7 @@ class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
             _color = _listColor[Random().nextInt(_listColor.length)];
           });
         },
-        child: const Icon(Icons.recycling),
+        child: const Icon(Icons.loop),
       ),
     );
   }
