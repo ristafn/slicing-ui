@@ -48,6 +48,10 @@
     {
       "title": "Counter Bloc App",
       "created_at": "17-09-2022"
+    },
+    {
+      "title": "Animated Container (implicit animation)",
+      "created_at": "20-09-2022"
     }
   ]
 }
