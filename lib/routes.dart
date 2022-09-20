@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'features/animated_container/views/animated_container_page.dart';
 import 'features/counter_bloc/views/counter_page.dart';
 import 'features/cupertino_widget/views/cupertino_widget_page.dart';
 import 'features/dialog_widget/views/dialog_widget_page.dart';
@@ -28,6 +29,7 @@ class Routes {
   static const listSeparatorRoute = '/list_separator';
   static const pageViewRoute = '/page_view';
   static const counterBlocRoute = '/counter_bloc';
+  static const animatedContainerRoute = '/animated_container';
 
   static const List<String> pages = [
     incrementRoute,
@@ -42,6 +44,7 @@ class Routes {
     listSeparatorRoute,
     pageViewRoute,
     counterBlocRoute,
+    animatedContainerRoute,
   ];
 
   static Map<String, Widget Function(BuildContext)> route() {
@@ -59,6 +62,7 @@ class Routes {
       listSeparatorRoute: (context) => const ListSeparatorPage(),
       pageViewRoute: (context) => const PageViewPage(),
       counterBlocRoute: (context) => const CounterPage(),
+      animatedContainerRoute: (context) => const AnimatedContainerPage(),
     };
   }
 }
