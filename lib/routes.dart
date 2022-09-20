@@ -16,6 +16,7 @@ import 'features/slicing_ui/views/slicingui_page.dart';
 import 'features/stateful_state/views/stateful_page.dart';
 
 class Routes {
+  // named route for each class
   static const homeRoute = '/';
   static const incrementRoute = '/increment';
   static const slicingRoute = '/slicing';
@@ -31,6 +32,7 @@ class Routes {
   static const counterBlocRoute = '/counter_bloc';
   static const animatedContainerRoute = '/animated_container';
 
+  // this list called at FutureBuilder(home_page.dart) and passing to ListView for the pushNamedRoute
   static const List<String> pages = [
     incrementRoute,
     slicingRoute,
@@ -47,6 +49,7 @@ class Routes {
     animatedContainerRoute,
   ];
 
+  // this method to assign customize named route to each class and called at (my_app.dart)
   static Map<String, Widget Function(BuildContext)> route() {
     return {
       homeRoute: (context) => const HomePage(),
