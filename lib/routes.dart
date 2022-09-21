@@ -11,6 +11,7 @@ import 'features/list_builder/views/list_builder_page.dart';
 import 'features/list_separator/views/list_separator_page.dart';
 import 'features/modal_bottom_sheet/views/modal_bottom_page.dart';
 import 'features/page_view/views/page_view_page.dart';
+import 'features/responsive_layout/views/responsive_layout_page.dart';
 import 'features/simple_parse/views/parse_page.dart';
 import 'features/slicing_ui/views/slicingui_page.dart';
 import 'features/stateful_state/views/stateful_page.dart';
@@ -31,6 +32,7 @@ class Routes {
   static const pageViewRoute = '/page_view';
   static const counterBlocRoute = '/counter_bloc';
   static const animatedContainerRoute = '/animated_container';
+  static const responsiveRoute = '/responsive_layout';
 
   // this list called at FutureBuilder(home_page.dart) and passing to ListView for the pushNamedRoute
   static const List<String> pages = [
@@ -46,6 +48,7 @@ class Routes {
     listSeparatorRoute,
     pageViewRoute,
     counterBlocRoute,
+    responsiveRoute,
     animatedContainerRoute,
   ];
 
@@ -65,6 +68,7 @@ class Routes {
       listSeparatorRoute: (context) => const ListSeparatorPage(),
       pageViewRoute: (context) => const PageViewPage(),
       counterBlocRoute: (context) => const CounterPage(),
+      responsiveRoute: (context) => const ResponsiveLayoutPage(),
       animatedContainerRoute: (context) => const AnimatedContainerPage(),
     };
   }
