@@ -56,6 +56,10 @@
     {
       "title": "Animated Container (implicit animation)",
       "created_at": "20-09-2022"
+    },
+    {
+      "title": "Animated Controller (explicit animation)",
+      "created_at": "20-09-2022"
     }
   ]
 }

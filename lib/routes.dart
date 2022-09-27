@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'features/animated_controller/views/animated_controller_page.dart';
 
 import 'features/animated_container/views/animated_container_page.dart';
 import 'features/counter_bloc/views/counter_page.dart';
@@ -31,8 +32,9 @@ class Routes {
   static const listSeparatorRoute = '/list_separator';
   static const pageViewRoute = '/page_view';
   static const counterBlocRoute = '/counter_bloc';
-  static const animatedContainerRoute = '/animated_container';
   static const responsiveRoute = '/responsive_layout';
+  static const animatedContainerRoute = '/animated_container';
+  static const animatedControllerRoute = '/animated_controller';
 
   // this list called at FutureBuilder(home_page.dart) and passing to ListView for the pushNamedRoute
   static const List<String> pages = [
@@ -50,6 +52,7 @@ class Routes {
     counterBlocRoute,
     responsiveRoute,
     animatedContainerRoute,
+    animatedControllerRoute,
   ];
 
   // this method to assign customize named route to each class and called at (my_app.dart)
@@ -70,6 +73,7 @@ class Routes {
       counterBlocRoute: (context) => const CounterPage(),
       responsiveRoute: (context) => const ResponsiveLayoutPage(),
       animatedContainerRoute: (context) => const AnimatedContainerPage(),
+      animatedControllerRoute: (context) => const AnimatedControllerPage(),
     };
   }
 }
