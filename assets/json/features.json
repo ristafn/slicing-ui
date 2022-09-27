@@ -50,7 +50,15 @@
       "created_at": "17-09-2022"
     },
     {
+      "title": "Responsive Layout",
+      "created_at": "19-09-2022"
+    },
+    {
       "title": "Animated Container (implicit animation)",
+      "created_at": "20-09-2022"
+    },
+    {
+      "title": "Animated Controller (explicit animation)",
       "created_at": "20-09-2022"
     }
   ]
