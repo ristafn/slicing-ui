@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/features/custom_image/views/custom_image_page.dart';
 import 'features/animated_controller/views/animated_controller_page.dart';
 
 import 'features/animated_container/views/animated_container_page.dart';
@@ -35,6 +36,7 @@ class Routes {
   static const responsiveRoute = '/responsive_layout';
   static const animatedContainerRoute = '/animated_container';
   static const animatedControllerRoute = '/animated_controller';
+  static const customImageRoute = '/custom_image';
 
   // this list called at FutureBuilder(home_page.dart) and passing to ListView for the pushNamedRoute
   static const List<String> pages = [
@@ -53,6 +55,7 @@ class Routes {
     responsiveRoute,
     animatedContainerRoute,
     animatedControllerRoute,
+    customImageRoute,
   ];
 
   // this method to assign customize named route to each class and called at (my_app.dart)
@@ -74,6 +77,7 @@ class Routes {
       responsiveRoute: (context) => const ResponsiveLayoutPage(),
       animatedContainerRoute: (context) => const AnimatedContainerPage(),
       animatedControllerRoute: (context) => const AnimatedControllerPage(),
+      customImageRoute: (context) => const CustomImagePage(),
     };
   }
 }
